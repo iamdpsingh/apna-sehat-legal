@@ -4,169 +4,245 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Apna Sehat – Privacy Policy</title>
+  <meta name="description" content="Apna Sehat Privacy Policy and medical disclaimer."/>
 
   <style>
-    :root {
-      --primary: #0f766e;
-      --bg: #f9fafb;
-      --card: #ffffff;
-      --border: #e5e7eb;
-      --text: #111827;
-      --muted: #6b7280;
+    :root{
+      --primary:#0f766e;
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --border:#e5e7eb;
+      --text:#111827;
+      --muted:#6b7280;
+
+      --notice-bg:#ecfeff;
+      --notice-border:#99f6e4;
+
+      --radius:16px;
+      --shadow:0 10px 30px rgba(0,0,0,.06);
+
+      --pad:clamp(14px, 2.5vw, 28px);
+      --maxw:900px;
     }
 
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b1220;
+        --card:#0f172a;
+        --border:#1f2937;
+        --text:#e5e7eb;
+        --muted:#9ca3af;
+
+        --notice-bg:rgba(14,116,110,.12);
+        --notice-border:rgba(45,212,191,.35);
+
+        --shadow:0 10px 30px rgba(0,0,0,.35);
+      }
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: var(--card);
-      padding: 24px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
     }
 
-    h1 {
-      color: var(--primary);
-      margin-top: 0;
+    /* Comfortable padding on all screen sizes */
+    .page{
+      padding:clamp(12px, 3vw, 32px);
     }
 
-    h2 {
-      margin-top: 28px;
-      font-size: 1.15rem;
+    .container{
+      max-width:var(--maxw);
+      margin:0 auto;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:var(--pad);
     }
 
-    p {
-      margin: 10px 0;
+    header{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      margin-bottom:18px;
     }
 
-    ul {
-      margin: 8px 0 8px 18px;
+    h1{
+      margin:0;
+      color:var(--primary);
+      font-size:clamp(1.35rem, 1.1rem + 1.2vw, 2rem);
+      line-height:1.2;
+      letter-spacing:-0.01em;
     }
 
-    .muted {
-      color: var(--muted);
-      font-size: 0.95rem;
+    h2{
+      margin:26px 0 10px;
+      font-size:clamp(1.05rem, 1rem + .35vw, 1.25rem);
+      line-height:1.25;
     }
 
-    .notice {
-      background: #ecfeff;
-      border: 1px solid #99f6e4;
-      padding: 14px;
-      border-radius: 10px;
-      margin: 16px 0;
-      font-size: 0.95rem;
+    p{ margin:10px 0; }
+
+    ul{
+      margin:8px 0 8px 20px;
+      padding:0;
     }
 
-    .footer {
-      margin-top: 32px;
-      font-size: 0.9rem;
-      color: var(--muted);
+    li{ margin:6px 0; }
+
+    .muted{
+      color:var(--muted);
+      font-size:clamp(.92rem, .88rem + .2vw, 1rem);
+      margin:0;
+    }
+
+    .notice{
+      background:var(--notice-bg);
+      border:1px solid var(--notice-border);
+      padding:14px 14px;
+      border-radius:12px;
+      margin:16px 0 8px;
+      font-size:clamp(.92rem, .88rem + .2vw, 1rem);
+    }
+
+    .footer{
+      margin-top:30px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      font-size:.9rem;
+      color:var(--muted);
+    }
+
+    /* Improve readability on very large screens */
+    .container p, .container li{
+      max-width:75ch;
+    }
+
+    /* Small-screen tweaks */
+    @media (max-width:480px){
+      .notice{ padding:12px; }
+      ul{ margin-left:18px; }
+    }
+
+    /* Print-friendly */
+    @media print{
+      body{ background:#fff; }
+      .page{ padding:0; }
+      .container{
+        box-shadow:none;
+        border:none;
+        border-radius:0;
+        max-width:none;
+        padding:0;
+      }
+      a{ color:#000; text-decoration:none; }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Apna Sehat – Privacy Policy</h1>
-    <p class="muted">Last updated: <strong>04 February 2026</strong></p>
+  <main class="page">
+    <article class="container" role="document" aria-label="Apna Sehat Privacy Policy">
+      <header>
+        <h1>Apna Sehat – Privacy Policy</h1>
+        <p class="muted">Last updated: <strong>04 February 2026</strong></p>
+      </header>
 
-    <div class="notice">
-      <strong>Medical Disclaimer:</strong><br/>
-      Apna Sehat is a digital health and telemedicine support application.
-      It provides preliminary health triage and informational guidance only.
-      It does <strong>not</strong> provide a medical diagnosis, treatment, or replace consultation with a qualified healthcare professional.
-      In case of a medical emergency, contact local emergency services immediately.
-    </div>
+      <section class="notice" aria-label="Medical Disclaimer">
+        <strong>Medical Disclaimer:</strong><br/>
+        Apna Sehat is a digital health and telemedicine support application.
+        It provides preliminary health triage and informational guidance only.
+        It does <strong>not</strong> provide a medical diagnosis, treatment, or replace consultation with a qualified healthcare professional.
+        In case of a medical emergency, contact local emergency services immediately.
+      </section>
 
-    <h2>1. Information We Collect</h2>
-    <p>To provide core telemedicine and triage functionality, Apna Sehat may collect:</p>
-    <ul>
-      <li>Symptoms and health-related inputs entered by you</li>
-      <li>Triage results such as risk zone (Green / Yellow / Red) and guidance</li>
-      <li>Basic metadata including timestamps and app usage context</li>
-      <li>Optional identification details (only when online features are enabled)</li>
-    </ul>
+      <h2>1. Information We Collect</h2>
+      <p>To provide core telemedicine and triage functionality, Apna Sehat may collect:</p>
+      <ul>
+        <li>Symptoms and health-related inputs entered by you</li>
+        <li>Triage results such as risk zone (Green / Yellow / Red) and guidance</li>
+        <li>Basic metadata including timestamps and app usage context</li>
+        <li>Optional identification details (only when online features are enabled)</li>
+      </ul>
 
-    <h2>2. On-Device and Offline Usage</h2>
-    <p>
-      Apna Sehat is designed to work in <strong>offline mode</strong>.
-      By default, all health data is stored locally on your device.
-      No internet connection or account login is required to access core triage features.
-    </p>
+      <h2>2. On-Device and Offline Usage</h2>
+      <p>
+        Apna Sehat is designed to work in <strong>offline mode</strong>.
+        By default, all health data is stored locally on your device.
+        No internet connection or account login is required to access core triage features.
+      </p>
 
-    <h2>3. Online Sync & Telemedicine Features (Phase 2)</h2>
-    <p>
-      When online features are enabled, the app may securely sync selected data to our servers
-      so that authorized medical professionals or healthcare systems can access it for review.
-    </p>
-    <ul>
-      <li>Online sync occurs only when internet is available</li>
-      <li>Authentication may use mobile number verification (OTP)</li>
-      <li>Offline functionality remains available at all times</li>
-    </ul>
+      <h2>3. Online Sync & Telemedicine Features (Phase 2)</h2>
+      <p>
+        When online features are enabled, the app may securely sync selected data to our servers
+        so that authorized medical professionals or healthcare systems can access it for review.
+      </p>
+      <ul>
+        <li>Online sync occurs only when internet is available</li>
+        <li>Authentication may use mobile number verification (OTP)</li>
+        <li>Offline functionality remains available at all times</li>
+      </ul>
 
-    <h2>4. How We Use Your Data</h2>
-    <ul>
-      <li>To generate health triage and safety guidance</li>
-      <li>To maintain your medical case history</li>
-      <li>To securely share information with healthcare providers (if enabled)</li>
-      <li>To improve app reliability, safety, and performance</li>
-    </ul>
+      <h2>4. How We Use Your Data</h2>
+      <ul>
+        <li>To generate health triage and safety guidance</li>
+        <li>To maintain your medical case history</li>
+        <li>To securely share information with healthcare providers (if enabled)</li>
+        <li>To improve app reliability, safety, and performance</li>
+      </ul>
 
-    <h2>5. Data Sharing</h2>
-    <p>
-      We respect your privacy.
-      Apna Sehat <strong>does not sell</strong> personal or health data.
-    </p>
-    <ul>
-      <li>No advertising or marketing data sharing</li>
-      <li>No third-party access without your consent</li>
-      <li>Medical data is shared only for healthcare purposes</li>
-    </ul>
+      <h2>5. Data Sharing</h2>
+      <p>
+        We respect your privacy.
+        Apna Sehat <strong>does not sell</strong> personal or health data.
+      </p>
+      <ul>
+        <li>No advertising or marketing data sharing</li>
+        <li>No third-party access without your consent</li>
+        <li>Medical data is shared only for healthcare purposes</li>
+      </ul>
 
-    <h2>6. Data Security</h2>
-    <p>
-      We use reasonable technical and organizational safeguards to protect your information,
-      including secure storage and controlled access.
-      However, no digital system can guarantee absolute security.
-    </p>
+      <h2>6. Data Security</h2>
+      <p>
+        We use reasonable technical and organizational safeguards to protect your information,
+        including secure storage and controlled access.
+        However, no digital system can guarantee absolute security.
+      </p>
 
-    <h2>7. Data Retention & Deletion</h2>
-    <ul>
-      <li>You can delete local data from within the app or by uninstalling it</li>
-      <li>If online sync is enabled, you may request deletion of server-stored data</li>
-      <li>Deleted data is permanently removed from our systems</li>
-    </ul>
+      <h2>7. Data Retention & Deletion</h2>
+      <ul>
+        <li>You can delete local data from within the app or by uninstalling it</li>
+        <li>If online sync is enabled, you may request deletion of server-stored data</li>
+        <li>Deleted data is permanently removed from our systems</li>
+      </ul>
 
-    <h2>8. Children’s Privacy</h2>
-    <p>
-      Apna Sehat is not intended for use by children under the age of 13.
-      If you believe a child has provided personal data, please contact us for removal.
-    </p>
+      <h2>8. Children’s Privacy</h2>
+      <p>
+        Apna Sehat is not intended for use by children under the age of 13.
+        If you believe a child has provided personal data, please contact us for removal.
+      </p>
 
-    <h2>9. Policy Updates</h2>
-    <p>
-      This Privacy Policy may be updated periodically.
-      The latest version will always be available within the app and at this page.
-    </p>
+      <h2>9. Policy Updates</h2>
+      <p>
+        This Privacy Policy may be updated periodically.
+        The latest version will always be available within the app and at this page.
+      </p>
 
-    <h2>10. Contact Information</h2>
-    <p>
-      For privacy-related questions or data deletion requests, contact:<br/>
-      <strong>Email:</strong> dps.s.code@gmail.com
-    </p>
+      <h2>10. Contact Information</h2>
+      <p>
+        For privacy-related questions or data deletion requests, contact:<br/>
+        <strong>Email:</strong> <a href="mailto:dps.s.code@gmail.com">dps.s.code@gmail.com</a>
+      </p>
 
-    <div class="footer">
-      © 2026 Apna Sehat. All rights reserved.
-    </div>
-  </div>
+      <div class="footer">© 2026 Apna Sehat. All rights reserved.</div>
+    </article>
+  </main>
 </body>
 </html>
