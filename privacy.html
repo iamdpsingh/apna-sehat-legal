@@ -2,72 +2,171 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Apna Sehat - Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Apna Sehat – Privacy Policy</title>
+
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;margin:24px;max-width:900px}
-    h1,h2{line-height:1.2}
-    .muted{color:#555}
-    .box{background:#f6f8fa;border:1px solid #e5e7eb;border-radius:10px;padding:14px;margin:12px 0}
-    ul{margin-top:6px}
+    :root {
+      --primary: #0f766e;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #111827;
+      --muted: #6b7280;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: var(--card);
+      padding: 24px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 1.15rem;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 8px 0 8px 18px;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .notice {
+      background: #ecfeff;
+      border: 1px solid #99f6e4;
+      padding: 14px;
+      border-radius: 10px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      margin-top: 32px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
   </style>
 </head>
+
 <body>
-  <h1>Apna Sehat – Privacy Policy</h1>
-  <p class="muted">Last updated: <strong>2026-02-04</strong></p>
+  <div class="container">
+    <h1>Apna Sehat – Privacy Policy</h1>
+    <p class="muted">Last updated: <strong>04 February 2026</strong></p>
 
-  <div class="box">
-    <strong>Important:</strong> Apna Sehat provides informational triage assistance only.
-    It does not diagnose, treat, or replace professional medical advice. For emergencies, call local emergency services.
+    <div class="notice">
+      <strong>Medical Disclaimer:</strong><br/>
+      Apna Sehat is a digital health and telemedicine support application.
+      It provides preliminary health triage and informational guidance only.
+      It does <strong>not</strong> provide a medical diagnosis, treatment, or replace consultation with a qualified healthcare professional.
+      In case of a medical emergency, contact local emergency services immediately.
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>To provide core telemedicine and triage functionality, Apna Sehat may collect:</p>
+    <ul>
+      <li>Symptoms and health-related inputs entered by you</li>
+      <li>Triage results such as risk zone (Green / Yellow / Red) and guidance</li>
+      <li>Basic metadata including timestamps and app usage context</li>
+      <li>Optional identification details (only when online features are enabled)</li>
+    </ul>
+
+    <h2>2. On-Device and Offline Usage</h2>
+    <p>
+      Apna Sehat is designed to work in <strong>offline mode</strong>.
+      By default, all health data is stored locally on your device.
+      No internet connection or account login is required to access core triage features.
+    </p>
+
+    <h2>3. Online Sync & Telemedicine Features (Phase 2)</h2>
+    <p>
+      When online features are enabled, the app may securely sync selected data to our servers
+      so that authorized medical professionals or healthcare systems can access it for review.
+    </p>
+    <ul>
+      <li>Online sync occurs only when internet is available</li>
+      <li>Authentication may use mobile number verification (OTP)</li>
+      <li>Offline functionality remains available at all times</li>
+    </ul>
+
+    <h2>4. How We Use Your Data</h2>
+    <ul>
+      <li>To generate health triage and safety guidance</li>
+      <li>To maintain your medical case history</li>
+      <li>To securely share information with healthcare providers (if enabled)</li>
+      <li>To improve app reliability, safety, and performance</li>
+    </ul>
+
+    <h2>5. Data Sharing</h2>
+    <p>
+      We respect your privacy.
+      Apna Sehat <strong>does not sell</strong> personal or health data.
+    </p>
+    <ul>
+      <li>No advertising or marketing data sharing</li>
+      <li>No third-party access without your consent</li>
+      <li>Medical data is shared only for healthcare purposes</li>
+    </ul>
+
+    <h2>6. Data Security</h2>
+    <p>
+      We use reasonable technical and organizational safeguards to protect your information,
+      including secure storage and controlled access.
+      However, no digital system can guarantee absolute security.
+    </p>
+
+    <h2>7. Data Retention & Deletion</h2>
+    <ul>
+      <li>You can delete local data from within the app or by uninstalling it</li>
+      <li>If online sync is enabled, you may request deletion of server-stored data</li>
+      <li>Deleted data is permanently removed from our systems</li>
+    </ul>
+
+    <h2>8. Children’s Privacy</h2>
+    <p>
+      Apna Sehat is not intended for use by children under the age of 13.
+      If you believe a child has provided personal data, please contact us for removal.
+    </p>
+
+    <h2>9. Policy Updates</h2>
+    <p>
+      This Privacy Policy may be updated periodically.
+      The latest version will always be available within the app and at this page.
+    </p>
+
+    <h2>10. Contact Information</h2>
+    <p>
+      For privacy-related questions or data deletion requests, contact:<br/>
+      <strong>Email:</strong> dps.s.code@gmail.com
+    </p>
+
+    <div class="footer">
+      © 2026 Apna Sehat. All rights reserved.
+    </div>
   </div>
-
-  <h2>1. What data we collect</h2>
-  <ul>
-    <li>Symptoms text you enter</li>
-    <li>Triage output (zone classification, informational guidance, and metadata such as confidence if available)</li>
-    <li>Timestamps and locally stored case history</li>
-  </ul>
-
-  <h2>2. Where your data is stored</h2>
-  <p>
-    By default, your data is stored locally on your device using on-device storage.
-    In Phase 2 (online mode), the app may sync your data to our server when internet is available and you choose to verify/sign in.
-  </p>
-
-  <h2>3. How we use your data</h2>
-  <ul>
-    <li>To provide triage assistance and maintain your case history</li>
-    <li>To sync your case history securely when online (Phase 2)</li>
-    <li>To improve reliability and safety of the app (aggregate, non-identifying analytics if enabled later)</li>
-  </ul>
-
-  <h2>4. Sharing and selling</h2>
-  <p>We do not sell your health data. We do not share your data with third parties for advertising.</p>
-
-  <h2>5. Online features and authentication (Phase 2)</h2>
-  <p>
-    When online features are enabled, the app may use mobile number verification (OTP) and authentication tokens
-    to secure your account and enable syncing. You can still use core triage features offline.
-  </p>
-
-  <h2>6. Security</h2>
-  <p>
-    We use reasonable safeguards to protect your information. No method of transmission or storage is 100% secure.
-  </p>
-
-  <h2>7. Data retention and deletion</h2>
-  <ul>
-    <li>You can delete your local app data from within the app (if provided) or by uninstalling the app.</li>
-    <li>If online sync is enabled, you may request deletion of server-stored data by contacting us.</li>
-  </ul>
-
-  <h2>8. Children’s privacy</h2>
-  <p>Apna Sehat is not intended for children under 13. If you believe a child has provided data, contact us.</p>
-
-  <h2>9. Changes to this policy</h2>
-  <p>We may update this policy. The latest version will always be available at this URL.</p>
-
-  <h2>10. Contact</h2>
-  <p>Email: <strong>YOUR_EMAIL_HERE</strong></p>
 </body>
 </html>
